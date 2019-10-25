@@ -1,6 +1,6 @@
 package br.com.pontocertosportes.pontocertoesportes.Model;
 
-public class Endereco {
+public class Endereco{
 
     private String rua;
     private String numero;
@@ -8,6 +8,10 @@ public class Endereco {
     private String bairro;
     private String cidade;
     private String estado;
+
+    public Endereco(){
+
+    }
 
     public Endereco(String rua, String numero, String cep, String bairro, String cidade, String estado) {
         this.rua = rua;

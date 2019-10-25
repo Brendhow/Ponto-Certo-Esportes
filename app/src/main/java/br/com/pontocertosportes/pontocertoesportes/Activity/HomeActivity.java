@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import br.com.pontocertosportes.pontocertoesportes.R;
 
@@ -24,6 +25,7 @@ public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         String nameUsuario = "user";
@@ -50,18 +52,23 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
     public void openFornecedores(View view){
-        Intent intent = new Intent(this, ConfFornecedorActivity.class);
-        startActivity(intent);
+       // Intent intent = new Intent(HomeActivity.this, list_fornecedores.class);
+        //startActivity(intent);
+        Toast toast = Toast.makeText(this, "Disponivel em breve. ", Toast.LENGTH_SHORT);
+        toast.show();
     }
 
     public void openFuncionario(View view){
-        Intent intent = new Intent(this, ConfFuncionarioActivity.class);
-        startActivity(intent);
+        //Intent intent = new Intent(HomeActivity.this, ListFuncionariosActivity.class);
+        //startActivity(intent);
+        Toast toast = Toast.makeText(this, "Disponivel em breve. ", Toast.LENGTH_SHORT);
+        toast.show();
     }
 
     public void openRealizarVenda(View view){
-        Intent intent = new Intent(this, ConfClienteActivity.class);
+        Intent intent = new Intent(this, realizarVendas.class);
         startActivity(intent);
     }
 
